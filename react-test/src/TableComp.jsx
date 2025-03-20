@@ -1,5 +1,4 @@
 import './TableComp.css';
-import { useEffect, useState } from 'react';
 import { Button, Table } from 'antd';
 
 

@@ -1,7 +1,4 @@
 import { Select } from 'antd';
-import { useState } from 'react';
-import TableComp from './TableComp';
-
 
 function SelectComp (props) {
   const { color, setColor} = props;

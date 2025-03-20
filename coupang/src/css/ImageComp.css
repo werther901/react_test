@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.img_container {
+  width: 388px;
+  height: 388px;
+}
+
+.img_container img {
+  width: 100%;
+}
+
+.Right_container {
+  width: 480px;
+  margin-left: 30px;
+}
+
+.Right_container h2 {
+  font-size: 18px;
+}
+
+.margin_b {
+  margin-bottom: 10px;
+}
+
+.count_text {
+  color: rgb(69, 69, 255);
+}
+
+.border01 {
+  height: 2px;
+  background-color: #ccc;
+}
+
+.price {
+  font-size: 20px;
+  padding: 12px 0;
+}
+
+.price_p1 {
+  font-size: 14px;
+}
+
+.price_p2 {
+  color: #768695;
+}
+
+.price_p2 span:first-child {
+  font-weight: 700;
+}
+
+.price_p3 {
+  color: #cb1400;
+}
+
+.price_p3 span:first-child {
+  font-weight: 700;
+}
+
+.text_cont {
+  margin: 10px 0;
+}
+
+.text_bold {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.text_color {
+  color: rgb(0, 110, 0);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.supplier {
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.supplier_span {
+  color: #346aff;
+}
+
+.count_box {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoeSize {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.shoeColor {
+  margin-top: 10px;
+}
+
+.text_cont02 {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.text_cont02 p:first-child,
+.text_cont02 p:nth-child(3) {
+  font-weight: 700;
+}
+
+.text_cont02 p:nth-child(3) {
+  color: #346aff;
+}

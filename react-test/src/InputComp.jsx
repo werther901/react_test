@@ -1,7 +1,6 @@
 import './InputComp.css';
 import { useFormik } from 'formik';
-import { useEffect, useState } from 'react';
-import { Button, Select, Input, Table, notification } from 'antd';
+import { Button, Input, notification } from 'antd';
 
 function InputComp(props) {
   const { tableData, setTableData } = props;
