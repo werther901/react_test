@@ -25,7 +25,6 @@ const MainPage1 = () => {
   //   return <>{user && <div>hi</div>}</>
   // }
 
-
   // useEffect(() => {
   //   userFormik.setFieldValue('name',data.name);
   //   userFormik.setFieldValue('age',data.age);
@@ -42,7 +41,7 @@ const MainPage1 = () => {
         <MainDetail3 fontColor={fontColor} setFontColor={setFontColor} text={text} back={back} />
         <MainDetail4 text={text} setText={setText} />
       </div>
-
+      <hr />
       {/* 250319 과제 */}
       <div className='wrap2'>
         <Left />

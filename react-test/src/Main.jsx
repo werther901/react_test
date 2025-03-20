@@ -20,14 +20,16 @@ function Main() {
 
   return (
     <>
-      <div className='container'>
+      <div className='container_main'>
         <InputComp tableData={tableData} setTableData={setTableData} />
         <SelectComp color={color} setColor={setColor} />
         <TableComp 
         tableData={tableData} 
         setTableData={setTableData} 
         color={color} />
+
       </div>
+      <hr />
     </>
   )
 }

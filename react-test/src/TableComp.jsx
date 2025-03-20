@@ -39,21 +39,18 @@ function TableComp(props) {
       dataIndex: 'age',
       key: 'age',
       align: 'center',
-
     },
     {
       title: '별명',
       dataIndex: 'nickName',
       key: 'nickName',
       align: 'center',
-
     },
     {
       title: '취미',
       dataIndex: 'hobby',
       key: 'hobby',
       align: 'center',
-
     },
     {
       title: '관리',
