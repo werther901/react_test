@@ -1,0 +1,88 @@
+
+/* .asdf {
+  border-width: 0;
+  width: 30px;
+} */
+
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.Right_container {
+  width: 430px;
+  margin-left: 30px;
+}
+
+.count_text {
+  color: rgb(69, 69, 255);
+}
+
+.border01 {
+  height: 2px;
+  background-color: #333;
+}
+
+.price p {
+  font-size: 23px;
+  color: rgb(202, 1, 1);
+  margin: 20px 0 10px 0;
+}
+
+.text_bold {
+  font-weight: 700;
+}
+
+.text_color {
+  color: rgb(0, 110, 0);
+  font-weight: 700;
+}
+
+.count_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.input_box {
+  border: 2px solid #ddd;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 4px;
+}
+
+.asdf {
+  border-width: 0;
+  width: 30px;
+}
+
+.operator {
+  cursor: pointer;
+}
+
+.readyBtn {
+  padding: 2px 13px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 2px solid #b8b8b8;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.total_amount {
+  margin-top: 30px;
+}
+
+.total_amount span {
+  font-size: 21px;
+}
+
+.total_amount span:nth-child(2) {
+  color: rgb(202, 1, 1);
+};

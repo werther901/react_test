@@ -1,0 +1,30 @@
+/* .container {
+  width: 100%;
+} */
+
+.apple_img {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 250px;
+  height: 230px;
+  overflow: hidden;
+}
+
+.apple_bundle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+
+.appleImg {
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid #333;
+  overflow: hidden;
+}
+
+.appleImg img {
+  width: 70px;
+}
