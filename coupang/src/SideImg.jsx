@@ -8,7 +8,7 @@ import m_crocs06 from './images/m_crocs06.jpg';
 import { useState } from 'react';
 
 
-function SideImg ({imgChange, mainImg, direction}) {
+function SideImg ({imgChange, type}) {
 
   const [mImg, setmImg] = useState([ m_crocs01, m_crocs02, m_crocs03, m_crocs04, m_crocs05, m_crocs06 ]);
   const [hovr, setHovr] = useState(null);
@@ -18,7 +18,8 @@ function SideImg ({imgChange, mainImg, direction}) {
   }
 
   return (
-    <div className={`sideImg_container ${direction === 'column' ? 'column' : 'row'}`} >
+    <div 
+    className={`sideImg_container ${type === 'column' ? 'column' : 'row'}`} >
       {
         mImg.map((img, i) => {
           return (

@@ -1,39 +1,66 @@
-
-.sideImg_container {
+/* 가로 */
+.sideImg_container.row {
   position: relative;
   display: flex;
   gap: 8px;
-}
-
-.sideImg_container.column {
-  flex-direction: column;
-}
-
-.shoes_m_cont {
-  position: relative;
   width: 49px;
   height: 49px;
+
+  .shoes_m_cont {
+    position: relative;
+  }
+
+  .shoes_m_cont img {
+    border: 1px solid #bbb;
+  }
+  
+  .shoes_m_cont img:hover {
+    border: 1px solid #346aff;
+  }
+  
+  .shoes_m_cont img.active {
+    border: 2px solid #346aff;
+  }
+  
+  .shoes_m_cont img.active + .img_icon::after {
+    content: '';
+    background: url(../images/coupang_background.png) no-repeat -379px -231px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+  }
+  
 }
 
-.shoes_m_cont img {
-  border: 1px solid #bbb;
+
+
+/* 세로 */
+.sideImg_container.column {
+  flex-direction: column;
+  
+  img {
+    width: 68px;
+    height: 68px;
+  };
+
+  .shoes_m_cont {
+    margin-bottom: 10px;
+  }
+
+  .shoes_m_cont img {
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+  }
+  
+  .shoes_m_cont img:active {
+    border: 1px solid #346aff;
+  }
+
+  .shoes_m_cont img.active {
+    border: 2px solid #346aff;
+  }
 }
 
-.shoes_m_cont img:hover {
-  border: 1px solid #346aff;
-}
-
-.shoes_m_cont img.active {
-  border: 2px solid #346aff;
-}
-
-.shoes_m_cont img.active + .img_icon::after {
-  content: '';
-  background: url(../images/coupang_background.png) no-repeat -379px -231px;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-radius: 50%;
-}

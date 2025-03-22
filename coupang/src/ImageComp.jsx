@@ -1,6 +1,5 @@
 import './css/ImageComp.css';
 import SideImg from './SideImg';
-
 import crocs01 from './images/crocs01.jpg';
 import crocs02 from './images/crocs02.jpg';
 import crocs03 from './images/crocs03.jpg';
@@ -12,12 +11,19 @@ import { useState } from "react";
 import { StarFilled } from '@ant-design/icons';
 
 
+
 const ImageComp = () => {
+  // 큰 이미지
   const [image, setImage] = useState(crocs01);
+  // default 큰 이미지 변경
   const [mainImg, setMainImg] = useState([ crocs01, crocs02, crocs03, crocs04, crocs05, crocs06 ]);
+  // Select박스
   const [pack, setPack] = useState(0);
+  // default 색상명
   const [colorName, setColorName] = useState('블랙');
+  // 색상명 변경
   const [cngColor, setCngColor] = useState(['블랙', '그레이', '그린', '베이지', '핑크', '화이트']);
+  // InputNumber value
   const [count, setCount] = useState(0);
 
   // 신발사이즈 옵션
@@ -46,13 +52,15 @@ const ImageComp = () => {
     setCount(value);
   };
 
+  // 상품가격
+  const amount = [17600, 16800];
+
   return (
-    <>
+    <div className='img_wrap_container'>
       <div className='SideImg_01'>
         <SideImg 
-          imgChange={imgChange}
-          mainImg={mainImg}
-          direction="column" />
+          type = "column"
+          imgChange={imgChange} />
       </div>
       <div className="ImageComp_container">
         <div className="img_container">
@@ -75,8 +83,8 @@ const ImageComp = () => {
         <div className="border01"></div>
         <div className="price">
           <p className='price_p1'>75% <s>69,900원</s></p>
-          <p className='price_p2'><span>17,600원</span> <span>쿠팡판매가</span></p>
-          <p className='price_p3'><span>16,800원</span> <span>즉시할인가</span></p>          
+          <p className='price_p2'><span>{(amount[0] * pack).toLocaleString()}원</span> <span>쿠팡판매가</span></p>
+          <p className='price_p3'><span>{(amount[1] * pack).toLocaleString()}원</span> <span>즉시할인가</span></p>          
         </div>
         <div className="border01"></div>
         <div className='text_cont'>
@@ -101,8 +109,8 @@ const ImageComp = () => {
           style={{ width: 170 }} />
           <div className='shoeSize shoeColor'>색상: {colorName}</div>
           <SideImg 
-          imgChange={imgChange}
-          mainImg={mainImg} />
+          type = "row"
+          imgChange={imgChange} />
         </div>
         <div className="border01"></div>
 
@@ -113,12 +121,12 @@ const ImageComp = () => {
         </div>
         <div className="border01"></div>
         <div className='text_cont03'>          
-          <InputNumber style={{width: 70}} min={1} max={50} defaultValue={1} onChange={onChange} />
+          <InputNumber className='text_cont03_input' style={{width: 70}} min={1} max={50} defaultValue={1} onChange={onChange} />
+          <Button className='cart_btn c_white'>장바구니 담기</Button>
+          <Button className='cart_btn c_blue' type="primary">바로구매</Button>
         </div>
       </div>
-    
-    
-    </>
+    </div>
   )
 }
 

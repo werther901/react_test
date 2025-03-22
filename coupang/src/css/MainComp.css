@@ -1,0 +1,14 @@
+.Main_container {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.Main_title {
+  margin-bottom: 30px;
+}
+
+.Main_title p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
