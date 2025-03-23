@@ -55,6 +55,8 @@
 
 .Main_Related_products {
   margin: 30px 0;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
 }
 
 .Main_Related_products h1 {
@@ -73,4 +75,27 @@
 
 .Main_hotDeal_container h1 span {
   color: #9e20d3;
+}
+
+@media (max-width: 450px) {
+
+  .Main_today_price h1 {
+    font-size: 21px;
+  }
+
+  .Main_hotDeal_container h1 {
+    font-size: 21px;
+  }
+
+  .ant-tabs-nav-list {
+    margin: 0;
+  }
+
+  .ant-tabs-tab-btn {
+    font-size: 11px;
+  }
+
+  .ant-tabs-tab {
+    margin: 0 9px !important;
+  }
 }

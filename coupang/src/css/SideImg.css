@@ -64,3 +64,17 @@
   }
 }
 
+@media (max-width: 450px) {
+
+  .sideImg_container.column {
+    display: none;
+  }
+
+  .sideImg_container.row {
+
+    .shoes_m_cont {
+      width: 47px;
+    }
+  }
+
+}

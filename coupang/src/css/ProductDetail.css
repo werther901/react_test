@@ -1,3 +1,11 @@
 .ProductDetail_img_container {
   text-align: center;
 }
+
+
+@media (max-width: 450px) {
+
+  .ProductDetail_img_container img {
+    width: 100%;
+  }
+}

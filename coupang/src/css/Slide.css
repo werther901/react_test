@@ -219,3 +219,17 @@ div {
     color: #888;  
   }
 }
+
+@media (max-width: 450px) {
+
+  .large {
+
+    .middle_slide_wrap {
+      width: 150px;
+    }
+
+    .slide_img_container {
+      width: 150px;
+    }
+  }
+}

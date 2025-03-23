@@ -288,6 +288,6 @@ const data04 = [
     review : 1,
     discount : '와우할인가 36% 18,000'
   },
-]
+];
 
 export { data, data02, data03, data04 };

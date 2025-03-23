@@ -35,6 +35,7 @@ function MainComp () {
           0: {
             slidesPerView: 2,
             slidesPerGroup: 2,
+            spaceBetween: 10
           },
           430: {
             slidesPerView: 3,
@@ -76,8 +77,8 @@ function MainComp () {
         pagination={{ clickable: true }}
         breakpoints={{
           0: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
           },
           430: {
             slidesPerView: 2,
@@ -111,7 +112,7 @@ function MainComp () {
         centered
         items={[
           {label: "상품상세", key: "1", children: <ProductDetail />},
-          {label: "상품평", key: "2", children: <ProductReview />},
+          {label: "상품평(3570)", key: "2", children: <ProductReview />},
           {label: "상품문의", key: "3", children: <ProductInquiry />},
           {label: "배송/교환/반품 안내", key: "4", children: <ShippingInfo />}
         ]}
@@ -128,14 +129,15 @@ function MainComp () {
             pagination={{ clickable: true }}
             breakpoints={{
               0: {
-                slidesPerView: 3,
-                slidesPerGroup: 2,
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                spaceBetween: 10
               },
-              430: {
+              480: {
                 slidesPerView: 4,
                 slidesPerGroup: 3,
               },
-              580: {
+              645: {
                 slidesPerView: 5,
                 slidesPerGroup: 4,
               },
@@ -169,8 +171,8 @@ function MainComp () {
             pagination={{ clickable: true }}
             breakpoints={{
               0: {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
               },
               430: {
                 slidesPerView: 2,

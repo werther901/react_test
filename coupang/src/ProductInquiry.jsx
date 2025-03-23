@@ -5,7 +5,7 @@ function ProductInquiry () {
 
   return (
     <div>
-
+      <img src="./images/inquiry.png" />
     </div>
   )
 }

@@ -1,0 +1,36 @@
+.ant-progress-inner {
+  height: 10px;
+}
+
+.Review_bar_container {
+  margin-top: 40px;
+  margin-bottom: 24px;
+  width: 350px;
+}
+
+.Review_bar_size {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+  padding: 0 0 12px 0;
+  height: auto; 
+  border-bottom: 1px solid #ddd;
+  width: 285px;
+}
+
+.Review_bar_content {
+  display: table-cell;
+  margin-right: 12px;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Review_bar_content_box {
+  display: flex;
+  height: 15px;
+}

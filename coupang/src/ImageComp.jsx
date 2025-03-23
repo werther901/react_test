@@ -9,6 +9,12 @@ import crocs06 from './images/crocs06.jpg';
 import { Button, Select, InputNumber } from 'antd';
 import { useState } from "react";
 import { StarFilled } from '@ant-design/icons';
+import m_crocs01 from './images/m_crocs01.jpg';
+import m_crocs02 from './images/m_crocs02.jpg';
+import m_crocs03 from './images/m_crocs03.jpg';
+import m_crocs04 from './images/m_crocs04.jpg';
+import m_crocs05 from './images/m_crocs05.jpg';
+import m_crocs06 from './images/m_crocs06.jpg';
 
 
 
@@ -17,6 +23,8 @@ const ImageComp = () => {
   const [image, setImage] = useState(crocs01);
   // default 큰 이미지 변경
   const [mainImg, setMainImg] = useState([ crocs01, crocs02, crocs03, crocs04, crocs05, crocs06 ]);
+  // 작은 이미지
+  const [mImg, setmImg] = useState([ m_crocs01, m_crocs02, m_crocs03, m_crocs04, m_crocs05, m_crocs06 ]);
   // Select박스
   const [pack, setPack] = useState(0);
   // default 색상명
@@ -24,7 +32,14 @@ const ImageComp = () => {
   // 색상명 변경
   const [cngColor, setCngColor] = useState(['블랙', '그레이', '그린', '베이지', '핑크', '화이트']);
   // InputNumber value
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
+  // SideImg - 클릭한 이미지 인덱스 저장
+  const [hovr, setHovr] = useState(null);
+  
+  // SideImg 클릭 시 active클래스 적용
+  const handleHover = (index) => {
+    setHovr(index);
+  }
 
   // 신발사이즈 옵션
   const option1 = [
@@ -48,19 +63,27 @@ const ImageComp = () => {
   }
 
   // InputNumber value
-  const onChange = (value) => {
+  const onChangedInput = (value) => {
     setCount(value);
   };
 
   // 상품가격
   const amount = [17600, 16800];
 
+  // 오른쪽 SideImg 클릭하면 왼쪽 SideImg에도 클릭한 효과
+  const LeftImgClick = () => {
+
+  };
+
   return (
     <div className='img_wrap_container'>
       <div className='SideImg_01'>
         <SideImg 
           type = "column"
-          imgChange={imgChange} />
+          imgChange={imgChange}
+          mImg={mImg}
+          handleHover={handleHover}
+          hovr={hovr} />
       </div>
       <div className="ImageComp_container">
         <div className="img_container">
@@ -83,8 +106,8 @@ const ImageComp = () => {
         <div className="border01"></div>
         <div className="price">
           <p className='price_p1'>75% <s>69,900원</s></p>
-          <p className='price_p2'><span>{(amount[0] * pack).toLocaleString()}원</span> <span>쿠팡판매가</span></p>
-          <p className='price_p3'><span>{(amount[1] * pack).toLocaleString()}원</span> <span>즉시할인가</span></p>          
+          <p className='price_p2'><span>{(amount[0] * count).toLocaleString()}원</span> <span>쿠팡판매가</span></p>
+          <p className='price_p3'><span>{(amount[1] * count).toLocaleString()}원</span> <span>즉시할인가</span></p>          
         </div>
         <div className="border01"></div>
         <div className='text_cont'>
@@ -110,7 +133,10 @@ const ImageComp = () => {
           <div className='shoeSize shoeColor'>색상: {colorName}</div>
           <SideImg 
           type = "row"
-          imgChange={imgChange} />
+          imgChange={imgChange}
+          mImg={mImg}
+          handleHover={handleHover}
+          hovr={hovr} />
         </div>
         <div className="border01"></div>
 
@@ -121,7 +147,7 @@ const ImageComp = () => {
         </div>
         <div className="border01"></div>
         <div className='text_cont03'>          
-          <InputNumber className='text_cont03_input' style={{width: 70}} min={1} max={50} defaultValue={1} onChange={onChange} />
+          <InputNumber className='text_cont03_input' style={{width: 70}} min={1} max={50} defaultValue={1} onChange={onChangedInput} />
           <Button className='cart_btn c_white'>장바구니 담기</Button>
           <Button className='cart_btn c_blue' type="primary">바로구매</Button>
         </div>

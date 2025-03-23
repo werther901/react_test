@@ -5,7 +5,7 @@ function ShippingInfo () {
 
   return (
     <div>
-
+      <img src="./images/exchange.png" />
     </div>
   )
 }
