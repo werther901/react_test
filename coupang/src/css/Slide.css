@@ -6,13 +6,94 @@ div {
   box-sizing: border-box;
 }
 
-/* 144px 이미지 아이템 */
+/* large: 160 이미지 아이템 */
+.large {
+  display: flex;
+  gap: 30px;
+
+  .middle_slide_wrap {
+    width: 160px;
+    cursor: pointer;
+  }
+
+  .slide_img_container {
+    /* width: 144px; */
+    height: 160px;
+    overflow: hidden;
+  }
+
+  .slide_img_container img {
+    width: 100%;
+    transition: 0.2s;
+  }
+
+  .slide_img_container img:hover {
+    transform: scale(1.1);
+  }
+
+  .slide_goods_title {
+    padding: 12px 0 0;
+  }
+
+  .slide_goods_title p {
+    font-size: 14px;
+    color: #111;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .large_discount {
+    font-size: 12px;
+    color: #cb1400;
+    margin: 5px 0;
+  }
+
+  .large_discount span:nth-child(2),
+  .large_discount s {
+    color: #768695;
+  }
+
+  .slide_goods_price {
+    margin-top: 4px;
+    color: #ae0000;
+    font-weight: 700;
+    font-size: 12px;
+    overflow: hidden;
+    clear: both;
+    margin-right: 4px;
+  }
+
+  .slide_goods_price p {
+    font-size: 14px;
+  }
+
+  .slide_goods_price p span {
+    font-size: 12px;
+  }
+
+  .slide_goods_rating_count {
+    line-height: 1;
+    margin-left: 4px;
+    font-family: Tahoma;
+    font-weight: 400;
+    font-size: 12px;
+    color: #888;  
+  }
+
+}
+
+
+/* middle: 144px 이미지 아이템 */
 .middle {
   display: flex;
   gap: 30px;
 
   .middle_slide_wrap {
     width: 144px;
+    cursor: pointer;
   }
 
   .slide_img_container {
@@ -71,4 +152,70 @@ div {
     color: #888;  
   }
 
+}
+
+/* small: 124px 이미지 아이템 */
+.small {
+
+
+  .middle_slide_wrap {
+    width: 124px;
+    cursor: pointer;
+  }
+
+  .slide_img_container {
+    /* width: 144px; */
+    height: 124px;
+    overflow: hidden;
+  }
+
+  .slide_img_container img {
+    width: 100%;
+    transition: 0.2s;
+  }
+
+  .slide_img_container img:hover {
+    transform: scale(1.1);
+  }
+
+  .slide_goods_title {
+    padding: 12px 0 0;
+  }
+
+  .slide_goods_title p {
+    font-size: 12px;
+    color: #111;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .slide_goods_price {
+    margin-top: 4px;
+    color: #ae0000;
+    font-weight: 700;
+    font-size: 12px;
+    overflow: hidden;
+    clear: both;
+    margin-right: 4px;
+  }
+
+  .slide_goods_price p {
+    font-size: 14px;
+  }
+
+  .slide_goods_price p span {
+    font-size: 12px;
+  }
+
+  .slide_goods_rating_count {
+    line-height: 1;
+    margin-left: 4px;
+    font-family: Tahoma;
+    font-weight: 400;
+    font-size: 12px;
+    color: #888;  
+  }
 }

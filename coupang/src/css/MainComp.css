@@ -12,3 +12,65 @@
   font-weight: 700;
   color: #111;
 }
+
+.Main_today_price {
+  margin : 40px 0 30px 0;
+}
+
+.Main_today_price h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  line-height: 29px;
+}
+
+.Main_today_price h1 span {
+  color: #cb1400;
+}
+
+.Main_tabs_container {
+  margin-top: 50px;
+}
+
+/* Tabs 간격 조정 */
+.ant-tabs-tab {
+  margin-right: 40px !important; /* 탭 간격 넓히기 */
+}
+
+/* 밑줄(ink-bar) 크기 조정 */
+.ant-tabs-ink-bar {
+  width: calc(100% / 4 - 10px) !important; /* 4개의 탭 기준으로 밑줄 크기 조정 */
+  transition: width 0.3s ease-in-out; /* 부드러운 애니메이션 */
+}
+
+:where(.css-dev-only-do-not-override-tjsggz).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-weight: 700;
+}
+
+.ant-tabs-nav-wrap {
+  background-color: #f9fafb;
+  border-top: 1px solid #dfe3e8;
+  border-bottom: 1px solid #dfe3e8;
+}
+
+.Main_Related_products {
+  margin: 30px 0;
+}
+
+.Main_Related_products h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.Main_hotDeal_container h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+   color: #111;
+}
+
+.Main_hotDeal_container h1 span {
+  color: #9e20d3;
+}
