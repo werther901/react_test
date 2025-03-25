@@ -70,7 +70,16 @@
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
-   color: #111;
+  color: #111;
+}
+
+.swiper-button-prev {
+  width: 36px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #111;
 }
 
 .Main_hotDeal_container h1 span {

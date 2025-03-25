@@ -1,9 +1,16 @@
 import './css/Slide.css';
 import { StarFilled } from '@ant-design/icons';
+import { ReadyContext } from './ReadyContext';
+import { useContext } from 'react';
+
+
 
 
 function Slide(props) {
   const { type, item } = props;
+
+  // Context API
+  const ready = useContext(ReadyContext);
   
   // "와우할인가" + "36% 18,000원"
   const label = (item.discount || "").split(' ').slice(0, 1).join(" ");
@@ -14,7 +21,7 @@ function Slide(props) {
     <div 
     className={type === 'large' ? 'large' :
       type === 'middle' ? 'middle' : 'small' }>
-      <div className='middle_slide_wrap'>
+      <div className='middle_slide_wrap' onClick={() => {ready()}}>
         <div className='slide_img_container'>
           <img src={item.url} />
         </div>

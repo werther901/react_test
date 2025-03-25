@@ -1,0 +1,40 @@
+table {
+  border-collapse : collapse;
+  margin-bottom: 40px;
+}
+
+.ShippingInfo_container {
+  padding-top: 40px;
+}
+
+.ShippingInfo_title {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ShippingInfo_table_tr {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.ShippingInfo_table_01 {
+  border-bottom: 1px solid #eee;
+  background-color: #fafafa;
+  padding: 10px 11px 8px 13px;
+  color: #454f5b;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.ShippingInfo_table_02 {
+  padding: 10px 11px;
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  border-bottom: 1px solid #eee;
+}

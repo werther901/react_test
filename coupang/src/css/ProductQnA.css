@@ -1,0 +1,66 @@
+.ProductInquiry_inquiry_answer {
+  border-top: 1px solid #ddd;
+}
+
+.ProductInquiry_inquiry {
+  padding: 20px 10px 20px 4em;
+  font-size: 12px;
+  position: relative;
+}
+
+.ProductInquiry_inquiry em {
+  position: absolute;
+  top: 20px;
+  left: 1em;
+  display: inline-block;
+  padding: 4px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #777;
+  font-style: normal;
+}
+
+.ProductInquiry_inquiry_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProductInquiry_inquiry_title p {
+  color: #888;
+}
+
+.ProductInquiry_inquiry_content,
+.ProductInquiry_answer_content {
+  margin-top: 10px;
+}
+
+.ProductInquiry_answer {
+  padding: 20px 10px 20px 4em;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  position: relative;
+}
+
+.ProductInquiry_answer em {
+  position: absolute;
+  top: 20px;
+  left: 1em;
+  display: inline-block;
+  padding: 4px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: #346aff;
+  font-style: normal;
+}
+
+.ProductInquiry_answer_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProductInquiry_answer_title_p2 {
+  color: #888;
+}

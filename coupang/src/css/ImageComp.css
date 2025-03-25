@@ -34,6 +34,7 @@ div {
 
 .count_text {
   color: rgb(69, 69, 255);
+  cursor: pointer;
 }
 
 .border01 {
@@ -88,6 +89,7 @@ div {
 
 .supplier_span {
   color: #346aff;
+  cursor: pointer;
 }
 
 .count_box {
@@ -119,6 +121,7 @@ div {
 
 .text_cont02 p:nth-child(3) {
   color: #346aff;
+  cursor: pointer;
 }
 
 .text_cont03 {

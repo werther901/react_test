@@ -7,7 +7,7 @@ import crocs04 from './images/crocs04.jpg';
 import crocs05 from './images/crocs05.jpg';
 import crocs06 from './images/crocs06.jpg';
 import { Button, Select, InputNumber } from 'antd';
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { StarFilled } from '@ant-design/icons';
 import m_crocs01 from './images/m_crocs01.jpg';
 import m_crocs02 from './images/m_crocs02.jpg';
@@ -15,10 +15,14 @@ import m_crocs03 from './images/m_crocs03.jpg';
 import m_crocs04 from './images/m_crocs04.jpg';
 import m_crocs05 from './images/m_crocs05.jpg';
 import m_crocs06 from './images/m_crocs06.jpg';
+import { ReadyContext } from './ReadyContext';
 
 
 
 const ImageComp = () => {
+  // Context API
+  const ready = useContext(ReadyContext);
+
   // 큰 이미지
   const [image, setImage] = useState(crocs01);
   // default 큰 이미지 변경
@@ -70,10 +74,7 @@ const ImageComp = () => {
   // 상품가격
   const amount = [17600, 16800];
 
-  // 오른쪽 SideImg 클릭하면 왼쪽 SideImg에도 클릭한 효과
-  const LeftImgClick = () => {
-
-  };
+  
 
   return (
     <div className='img_wrap_container'>
@@ -101,7 +102,7 @@ const ImageComp = () => {
             <StarFilled style={{color: "orange"}} />
             <StarFilled style={{color: "orange"}} />
           </span>
-          <span className="count_text"> 3,507개 상품평</span>
+          <span className="count_text" onClick={() => {ready()}}> 3,507개 상품평</span>
         </div>
         <div className="border01"></div>
         <div className="price">
@@ -119,7 +120,8 @@ const ImageComp = () => {
         <div className="border01"></div>
         <div>
           <div className='supplier'>
-            <span>판매자: </span><span className='supplier_span'>주식회사 우리홈즈</span>
+            <span>판매자: </span><span className='supplier_span' 
+            onClick={() => {ready();}}>주식회사 우리홈즈</span>
           </div>
         </div>
         <div className="border01"></div>
@@ -143,13 +145,17 @@ const ImageComp = () => {
         <div className='text_cont02'>
           <p>적립</p>
           <p>최대 840원 쿠팡캐시 적립 · 쿠페이 머니 결제시</p>
-          <p>혜택보기</p>
+          <p onClick={() => {ready()}}>혜택보기</p>
         </div>
         <div className="border01"></div>
         <div className='text_cont03'>          
           <InputNumber className='text_cont03_input' style={{width: 70}} min={1} max={50} defaultValue={1} onChange={onChangedInput} />
-          <Button className='cart_btn c_white'>장바구니 담기</Button>
-          <Button className='cart_btn c_blue' type="primary">바로구매</Button>
+          <Button 
+          className='cart_btn c_white'
+          onClick={() => {ready();}}>장바구니 담기</Button>
+          <Button 
+          className='cart_btn c_blue' type="primary"
+          onClick={() => {ready();}}>바로구매</Button>
         </div>
       </div>
     </div>

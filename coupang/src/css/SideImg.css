@@ -8,6 +8,7 @@
 
   .shoes_m_cont {
     position: relative;
+    cursor: pointer;
   }
 
   .shoes_m_cont img {
@@ -48,6 +49,7 @@
 
   .shoes_m_cont {
     margin-bottom: 10px;
+    cursor: pointer;
   }
 
   .shoes_m_cont img {

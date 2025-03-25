@@ -1,3 +1,41 @@
+li {
+  list-style: none;
+}
+
+.ProductInquiry_container {
+  border: 1px solid rgb(221, 221, 221);
+  padding: 30px 40px;
+}
+
+.ProductInquiry_title_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProductInquiry_title {
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.ProductInquiry_content {
+  font-size: 13px;
+}
+
+.ProductInquiry_btn {
+  padding: 6px 20px;
+  font-size: 14px;
+  width: 100px;
+}
+
+.ProductInquiry_inquiry_container {
+  border-top: 1px solid #111;
+  margin-top: 30px;
+}
+
+
+
+
+
 @media (max-width: 450px) {
 
   img {

@@ -3,7 +3,6 @@ import apple from './images/apple.jpg';
 import apple2 from './images/apple2.jpg';
 import apple3 from './images/apple3.jpg';
 import apple4 from './images/apple4.jpg';
-import { Button, Select, Input } from 'antd';
 import { useState } from "react";
 
 const Left = () => {

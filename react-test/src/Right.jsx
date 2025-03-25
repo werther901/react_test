@@ -1,5 +1,5 @@
 import "./Right.css";
-import { Button, Select } from 'antd';
+import { Select } from 'antd';
 import { StarFilled } from '@ant-design/icons';
 import { useState } from "react";
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import MainDetail from "./MainDetail";
 import MainDetail2 from "./MainDetail2";
@@ -6,11 +6,7 @@ import MainDetail3 from "./MainDetail3";
 import MainDetail4 from "./MainDetail4";
 import Left from "./Left";
 import Right from "./Right";
-// import { Button, Select, Input, Table, notification } from 'antd';
 import apple from './images/apple.jpg';
-import banana from './images/banana.jpg';
-import grape from './images/grape.jpg';
-// import { useFormik } from 'formik';
 
 const MainPage1 = () => {
   
@@ -42,6 +38,7 @@ const MainPage1 = () => {
         <MainDetail4 text={text} setText={setText} />
       </div>
       <hr />
+
       {/* 250319 과제 */}
       <div className='wrap2'>
         <Left />
